@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { search } from 'services';
 
-import { root } from './searchPanel.scss';
+import { root, sectionTitle, button } from './searchPanel.scss';
 
 class SearchPanel extends Component {
 	state = { results: [] };
@@ -18,8 +18,11 @@ class SearchPanel extends Component {
 
 	render = () => (
 		<div className={root}>
+			<h2 className={sectionTitle}>Search</h2>
 			<input type='text' ref={input => (this.input = input)} />
-			<button onClick={() => this.onSearchButtonClick()} />
+			<button onClick={() => this.onSearchButtonClick()} className={button}>
+				Search
+			</button>
 			{this.renderCardList()}
 		</div>
 	);

@@ -1,12 +1,16 @@
+$backgroundColor: black;
+$foregroundColor: white;
 $main-font: Opens Sans, sans-serif;
 
 .root {
     width: 100%;
-    height: 16px;
+    height: 24px;
+    background: $backgroundColor;
 }
 
 .footerText {
     margin-top: 8px;
     text-align: center;
+    color: $foregroundColor;
     font-family: $main-font;
 }
