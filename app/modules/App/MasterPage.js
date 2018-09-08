@@ -1,5 +1,7 @@
 import React from 'react';
 
-const MasterPage = () => <main>Master Page</main>;
+import { root } from './masterPage.scss';
+
+const MasterPage = () => <main className={root}>Master Page</main>;
 
 export { MasterPage };
