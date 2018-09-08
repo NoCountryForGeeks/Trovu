@@ -65,6 +65,7 @@
     "dependencies": {
         "@babel/polyfill": "^7.0.0-beta.56",
         "@babel/runtime": "^7.0.0-beta.56",
+        "axios": "^0.18.0",
         "i18next": "^11.3.2",
         "i18next-browser-languagedetector": "^2.2.0",
         "i18next-xhr-backend": "^1.5.1",
