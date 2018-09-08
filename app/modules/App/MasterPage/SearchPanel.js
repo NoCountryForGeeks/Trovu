@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { search } from 'services';
+import { Card } from './SearchPanel/Card';
 
 import { root, sectionTitle, button } from './searchPanel.scss';
 
@@ -13,7 +14,11 @@ class SearchPanel extends Component {
 		);
 
 	renderCardList = () => (
-		<ul>{this.state.results.map(card => <p key={card.id}>{card.name}</p>)}</ul>
+		<ul>
+			{this.state.results.map(card => (
+				<Card key={card.id} name={card.name} imageUrl={card.imageUrl} />
+			))}
+		</ul>
 	);
 
 	render = () => (

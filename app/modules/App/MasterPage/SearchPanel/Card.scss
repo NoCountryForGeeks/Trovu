@@ -1,0 +1,26 @@
+$foregroundColor: black;
+$main-font: Opens Sans, sans-serif;
+
+.root {
+    width: 223px;
+    height: 361px;
+}
+
+.cardImage {
+    width: 223px;
+    height: 311px;
+}
+
+.cardTitle {
+    text-align: center;
+    color: $foregroundColor;
+    font-size: 16px;
+    font-family: $main-font;
+    padding-top: 8px;
+}
+
+.placeholder {
+    width: 223px;
+    height: 311px;
+    background-image: url('../../../../content/assets/images/placeholder.png');
+}
