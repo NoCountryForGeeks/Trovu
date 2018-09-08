@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { root } from './header.scss';
+import { root, headerTitle, logo } from './header.scss';
+import trovuLogo from 'assets/images/logo.png';
 
 const Header = () => (
 	<header className={root}>
-		<h1>Header</h1>
+		<img className={logo} src={trovuLogo} />
+		<h1 className={headerTitle}>Trovu</h1>
 	</header>
 );
 

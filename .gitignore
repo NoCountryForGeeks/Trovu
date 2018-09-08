@@ -10,3 +10,5 @@ reports
 *.log
 
 stats.json
+
+.DS_Store
