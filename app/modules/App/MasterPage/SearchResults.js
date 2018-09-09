@@ -1,11 +1,19 @@
 import React from 'react';
+import classNames from 'classNames';
 
 import { Card } from './SearchResults/Card';
 
-import { root } from './searchResults.scss';
+import styles from './searchResults.scss';
+
+const cx = classNames.bind(styles);
+
+const rootListStyles = cx({
+	[ styles.root ]: true,
+	[ styles.wrapCardList ]: true
+});
 
 const renderCardList = results => (
-	<ul className={root}>
+	<ul className={rootListStyles}>
 		{results.map(({ id, name, imageUrl }) => (
 			<Card key={id} name={name} imageUrl={imageUrl} />
 		))}

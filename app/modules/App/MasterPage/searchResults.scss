@@ -1,4 +1,11 @@
 .root {
-    height: 100%;
     width: 75%;
+}
+
+.wrapCardList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

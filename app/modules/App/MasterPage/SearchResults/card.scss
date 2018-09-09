@@ -6,8 +6,11 @@ $cardHeight: 311px;
 $textHeight: 50px;
 
 .root {
+    display: inline-flex;
     width: $cardWidth;
     height: $cardHeight + $textHeight;
+    margin: 10px;
+    flex-direction: column;
 }
 
 .cardImage {

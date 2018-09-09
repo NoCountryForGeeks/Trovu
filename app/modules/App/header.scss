@@ -8,12 +8,12 @@
     font-family: $main-font;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .headerTitle {
     font-size: 48px;
     margin-left: 16px;
-    margin-top: 8px;
     text-transform: uppercase;
 }
 
