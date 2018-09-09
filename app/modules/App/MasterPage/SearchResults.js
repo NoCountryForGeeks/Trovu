@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classNames';
 
 import { Card } from './SearchResults/Card';
+import { Loading } from './SearchResults/Loading';
 
 import styles from './searchResults.scss';
 
@@ -20,6 +21,13 @@ const renderCardList = results => (
 	</ul>
 );
 
-const SearchResult = ({ results }) => renderCardList(results);
+const SearchResult = ({ results, isLoading }) =>
+	isLoading ? (
+		<div className={styles.wrapLoading}>
+			<Loading />
+		</div>
+	) : (
+		renderCardList(results)
+	);
 
 export { SearchResult };

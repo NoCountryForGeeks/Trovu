@@ -2,6 +2,13 @@
     width: 75%;
 }
 
+.wrapLoading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .wrapCardList {
     display: flex;
     flex-direction: row;
