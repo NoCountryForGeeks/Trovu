@@ -1,4 +1,6 @@
+import cards from './cards';
+
 export default {
-	sagas: [],
-	reducers: {}
+	sagas: [ ...cards.sagas ],
+	reducers: { ...cards.reducers }
 };

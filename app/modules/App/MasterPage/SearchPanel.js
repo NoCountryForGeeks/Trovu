@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 
-import { search } from 'services';
-
 import { root, sectionTitle, button } from './searchPanel.scss';
 
 class SearchPanel extends Component {
-	onSearchButtonClick = () =>
-		search(this.input.value).then(results =>
-			this.props.searchCallback(results.data.cards)
-		);
+	onSearchButtonClick = () => this.props.search(this.input.value);
 
 	render = () => (
 		<div className={root}>
