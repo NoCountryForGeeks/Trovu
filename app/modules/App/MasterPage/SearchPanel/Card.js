@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { cardImage, placeholder, cardTitle, root } from './Card.scss';
+import { cardImage, cardTitle, root } from './Card.scss';
 
-const Card = props => (
+import placeholder from 'assets/images/placeholder.png';
+
+const Card = ({ name, imageUrl }) => (
 	<div className={root}>
-		<div className={placeholder}>
-			<img className={cardImage} src={props.imageUrl} />
-		</div>
-		<p className={cardTitle}>{props.name}</p>
+		<img className={cardImage} src={imageUrl ? imageUrl : placeholder} />
+		<p className={cardTitle}>{name}</p>
 	</div>
 );
 

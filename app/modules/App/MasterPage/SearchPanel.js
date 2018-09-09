@@ -15,8 +15,8 @@ class SearchPanel extends Component {
 
 	renderCardList = () => (
 		<ul>
-			{this.state.results.map(card => (
-				<Card key={card.id} name={card.name} imageUrl={card.imageUrl} />
+			{this.state.results.map(({ id, name, imageUrl }) => (
+				<Card key={id} name={name} imageUrl={imageUrl} />
 			))}
 		</ul>
 	);

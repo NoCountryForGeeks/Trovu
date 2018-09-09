@@ -1,13 +1,18 @@
 @import '../../../../content/styles/variables.scss';
 
+$foregroundColor: black;
+$cardWidth: 223px;
+$cardHeight: 311px;
+$textHeight: 50px;
+
 .root {
-    width: 223px;
-    height: 361px;
+    width: $cardWidth;
+    height: $cardHeight + $textHeight;
 }
 
 .cardImage {
-    width: 223px;
-    height: 311px;
+    width: $cardWidth;
+    height: $cardHeight;
 }
 
 .cardTitle {
@@ -16,10 +21,4 @@
     font-size: 16px;
     font-family: $main-font;
     padding-top: 8px;
-}
-
-.placeholder {
-    width: 223px;
-    height: 311px;
-    background-image: url('assets/images/placeholder.png');
 }
